@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.myitschool.seabattle.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/buttonStartGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickButtonStartGame"
+        android:text="Играть"
+        android:minHeight="50dp"
+        android:minWidth="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <Button
+        android:text="случайная расстановка"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Random"
+        android:onClick="Random"
+        android:layout_below="@+id/textView3"
+        android:layout_toRightOf="@+id/buttonStartGame"
+        android:layout_toEndOf="@+id/buttonStartGame"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rotate"
+        android:id="@+id/imageButton2"
+        android:maxWidth="5dp"
+        android:minHeight="5dp"
+        android:onClick="imageButton2"
+        android:layout_marginRight="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_below="@+id/buttonStartGame"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
